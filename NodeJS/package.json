@@ -1,0 +1,15 @@
+{
+  "name": "play_with_node",
+  "version": "1.0.0",
+  "description": "Here I am just playing with node npm",
+  "main": "index3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sunil Rathod",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "first_express_server",
+  "version": "1.0.0",
+  "description": "This our first server package set up",
+  "main": "server1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Atulya Kaushik",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

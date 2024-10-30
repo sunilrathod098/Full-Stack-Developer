@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Background Color Switcher</title>
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #9e9b9b;
+        transition: background-color 0.3s ease-in-out;
+    }
+    nav {
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        color: #ffcc00;
+    }
+    .canvas {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 36px;
+        color: #333;
+    }
+
+    h2 {
+        font-size: 18px;
+        color: #555;
+    }
+
+    h2 span {
+        color: #ff6600;
+    }
+    .button {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    #grey {
+        background-color: grey;
+    }
+
+    #white {
+        background-color: white;
+        border: 1px solid #ccc;
+    }
+
+    #blue {
+        background-color: blue;
+    }
+
+    #yellow {
+        background-color: yellow;
+    }
+    .button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="https://github.com/sunilrathod098">GitHub</a>
+    </nav>
+    <div class="canvas">
+        <h1>Color Scheme Switcher</h1>
+        <span class="button" id="grey"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+        <h2>
+            Try clicking on one of the colors above
+            <span>to change the background color of this page!</span>
+        </h2>
+    </div>
+    <script src="colorSwitch.js"></script>
+</body>
+
+</html>

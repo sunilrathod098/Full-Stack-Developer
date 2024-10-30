@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="icon" href="images/love.ico">
+    <style>
+        .dc{
+            background-color: red;
+        }
+        .marval{
+            background-color: black;
+        }
+        .superhero img{
+            width: 300px;
+            height: auto;
+            border: 10px solid blueviolet;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+        img{
+            width: 400px;
+            height: auto;
+        }
+        img:hover{
+            transform: scale(0.9);
+            transform: all 2s ease;
+        }
+        .sr img{
+            background-color: black;
+            width: 300px;
+            height: auto;
+            border: 10px solid skyblue;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+        #batman{
+            width: 500px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="superhero">
+        <img id="batman" class="dc" src="images/batman.png">
+        <img class="dc" src="images/superman.png">
+        <img class="marval" src="images/ironman.png">
+        <img class="marval" src="images/spiderman.png" >
+    </div>
+    <img src="images/prepinsta.png">
+    <div class="sr">
+        <img src="images/SUNIL .jpg">
+    </div>
+</body>
+</html>

@@ -7,7 +7,25 @@ function App() {
 
   const addValue = () =>{
     if (count < 20) {
-      setCount(count + 1)
+      setCount(count + 1);
+      // setCount(count + 1);
+      // setCount(count + 1);
+      // setCount(count + 1);
+
+      /*here this is a interview question
+
+      setCount(preCounter => preCounter + 1)
+      setCount(preCounter => preCounter + 1)
+      setCount(preCounter => preCounter + 1)
+      setCount(preCounter => preCounter + 1)
+      setCount(preCounter => preCounter + 1)
+
+      This code uses functional updates in React (preCounter => preCounter + 1)
+      to ensure each state update is based on the latest value,
+      preventing stale or batched state issues.
+      It ensures sequential and accurate updates,
+      critical for scenarios where state changes depend on the current value.
+      */
     }
   }
 
